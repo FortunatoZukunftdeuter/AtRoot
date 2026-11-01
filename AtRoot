@@ -1,0 +1,8 @@
+run == cargo run
+build == cargo build
+
+ins == cargo install --path .
+
+test == inko run test/src/flow.inko
+
+echo == echo "AtRoot seems to work"

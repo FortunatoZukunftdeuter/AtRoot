@@ -1,0 +1,19 @@
+import std.sys (Command, ChildProcess)
+
+type Cargo {
+    fn static run -> Command {
+        let cmd = Command.new("cargo")
+        cmd.arguments.push("run")
+        cmd.arguments.push("--")
+        return cmd
+    }
+}
+
+type async Main {
+    fn async main {
+        let cmd = Cargo.run()
+        cmd.arguments.push("echo")
+        cmd.spawn
+
+    }
+}

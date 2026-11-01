@@ -20,7 +20,7 @@ pub fn read_file(at_root_route: &Path) -> HashMap<String, String> {
             .exit(READING_EXIT_CODE)
     });
 
-    let mut document = String::with_capacity(512);
+    let mut document = String::with_capacity(128);
 
     file.read_to_string(&mut document)
     .unwrap_or_bye(|bayern , err| {

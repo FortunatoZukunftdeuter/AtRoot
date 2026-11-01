@@ -9,6 +9,9 @@ use crate::{
 };
 
 pub fn closer(dir: &Path) -> PathBuf {
+    if let Some(at_root_file) = look_for(dir) {
+        return at_root_file;
+    }
     let mut current_dir = dir;
 
     while let Some(parent_dir) = current_dir.parent() {
