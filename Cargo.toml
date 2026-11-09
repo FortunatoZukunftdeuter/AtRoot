@@ -2,6 +2,11 @@
 name = "atroot"
 version = "0.1.0"
 edition = "2024"
+description = "Invoke Commands at the root project"
+license = "Apache-2.0"
+repository = "https://github.com/FortunatoZukunftdeuter/AtRoot"
+readme = "README.md"
+keywords = ["atroot", "root"]
 
 [dependencies]
 # ztd = { path = "/home/Zukunter/Workspace/Ztd" }
