@@ -48,6 +48,8 @@ This executes:
 cargo run
 ```
 
+Equivalently
+
 ```bash
 atroot run and build
 ```
