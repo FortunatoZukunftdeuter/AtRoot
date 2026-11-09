@@ -1,0 +1,8 @@
+run == cargo run
+build == cargo build
+
+ins == cargo install --path .
+
+add all == git add .
+
+push Stable == git push -u origin Stable 
