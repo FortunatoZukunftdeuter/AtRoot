@@ -9,4 +9,4 @@ readme = "README.md"
 keywords = ["atroot", "root"]
 
 [dependencies]
-# ztd = { path = "/home/Zukunter/Workspace/Ztd" }
+ztd = "0.0.5"

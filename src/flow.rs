@@ -4,7 +4,8 @@ use crate::{
     parser
 };
 
-pub fn init() {
+pub fn init() 
+{
     let cwd = fremd::get_cwd();
 
     let closest_atroot = atroot::closest(&cwd);
