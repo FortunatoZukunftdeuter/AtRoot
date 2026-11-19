@@ -20,7 +20,10 @@ pub fn look_in(dir: &Path) -> Option<PathBuf>
             continue;
         }
 
-        let file_name_lowercase = entry.file_name().to_ascii_lowercase();
+        let file_name_lowercase = entry.path()
+            .file_stem()
+            .unwrap_or(&entry.file_name())
+            .to_ascii_lowercase();
 
         if file_name_lowercase == TARGET_FILE_NAME
         {

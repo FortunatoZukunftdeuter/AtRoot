@@ -14,10 +14,10 @@ pub fn init()
 
     fremd::set_parent_cwd(&closest_atroot);
 
-    let arg = fremd::get_arg();
+    let (cmd, args) = fremd::get_arg();
 
-    if let Some(cmd) = cmds.get(&arg) 
+    if let Some(cmd) = cmds.get(&cmd) 
     {
-        fremd::execute(cmd);
+        fremd::execute(cmd, args);
     }
 }

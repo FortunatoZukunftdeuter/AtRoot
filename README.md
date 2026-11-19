@@ -78,4 +78,3 @@ configuration file's location manually.
 - **Project-aware:** Automatically discovers the nearest `atroot` configuration file.
 - **Custom commands:** Associate identifiers with commands of your choice.
 - **Minimal configuration:** A simple, readable syntax.
-
